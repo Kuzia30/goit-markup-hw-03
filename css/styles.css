@@ -19,10 +19,21 @@ body {
 
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .link {
   text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid tomato;
 }
 
 /* ==============header================== */
@@ -68,14 +79,18 @@ body {
 }
 /* ==============header================== */
 .hero {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
   background-color: var(--footer-color);
 }
 
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
@@ -83,27 +98,43 @@ body {
 }
 
 .hero-button {
+  min-width: 200px;
+  padding: 10px 32px;
+  border-radius: 4px;
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
+  align-items: center;
+  text-align: center;
 
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  border-color: transparent;
 }
 /* ==============hero================== */
 
 /* ==============advantages================== */
+.advantages .container {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
 .advantages-title {
+  display: none;
   color: tomato;
 }
 
+.advantages-list-item {
+  width: 270px;
+}
 .advantages-list-item-caption {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -114,6 +145,9 @@ body {
 }
 
 .advantages-list-item-text {
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -121,7 +155,14 @@ body {
 /* ==============advantages================== */
 
 /* ==============business================== */
+.business .container {
+  margin-bottom: 94px;
+}
+
 .business-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -130,13 +171,21 @@ body {
 
   color: var(--title-text-color);
 }
+
 /* ==============business================== */
 
 /* ==============team================== */
 .team {
+  padding-top: 94px;
   background-color: var(--section-grey-color);
 }
+.team .container {
+}
+
 .team-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
