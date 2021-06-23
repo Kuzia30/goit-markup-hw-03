@@ -17,6 +17,24 @@ body {
   color: var(--primary-text-color);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
 .list {
   list-style: none;
   margin: 0;
@@ -33,7 +51,15 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid tomato;
+  outline: 1px solid tomato;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 /* ==============header================== */
@@ -50,7 +76,33 @@ body {
   color: var(--accent-color);
 }
 
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  width: 294px;
+  margin-left: 93px;
+}
+
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+
 .menu-item-link {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -61,6 +113,10 @@ body {
 
 .menu-item-link.current {
   color: var(--accent-color);
+}
+
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .contacts-item-mail,
@@ -78,7 +134,12 @@ body {
   color: var(--accent-color);
 }
 /* ==============header================== */
+
+/* ==============hero================== */
+
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -86,8 +147,8 @@ body {
 }
 
 .hero-title {
-  margin-top: 0;
   margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -113,26 +174,33 @@ body {
 
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-  border-color: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /* ==============hero================== */
 
 /* ==============advantages================== */
 .advantages .container {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .advantages-title {
-  display: none;
-  color: tomato;
+  background-color: teal;
+}
+
+.advantages-list {
+  display: flex;
 }
 
 .advantages-list-item {
   width: 270px;
 }
+
+.advantages-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .advantages-list-item-caption {
-  margin-top: 0;
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -145,9 +213,6 @@ body {
 }
 
 .advantages-list-item-text {
-  margin-top: 0;
-  margin-bottom: 0;
-
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -156,11 +221,10 @@ body {
 
 /* ==============business================== */
 .business .container {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .business-title {
-  margin-top: 0;
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -170,21 +234,28 @@ body {
   letter-spacing: 0.03em;
 
   color: var(--title-text-color);
+}
+
+.business-list {
+  display: flex;
+}
+
+.business-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* ==============business================== */
 
 /* ==============team================== */
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background-color: var(--section-grey-color);
 }
 .team .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team-title {
-  margin-top: 0;
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -196,15 +267,22 @@ body {
   color: var(--title-text-color);
 }
 
+.team-list {
+  display: flex;
+}
+
 .team-list-item {
   width: 270px;
-  height: 368px;
 
   background: var(--primary-white-color);
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.team-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team-list-item-caption {
@@ -221,8 +299,7 @@ body {
 }
 
 .team-list-item-text {
-  margin-top: 0;
-  margin-bottom: 30;
+  margin-bottom: 30px;
 
   font-size: 16px;
   line-height: 1.19;
@@ -253,7 +330,7 @@ body {
   color: var(--primary-white-color);
 }
 
-.address-list-item {
+.address-list-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
