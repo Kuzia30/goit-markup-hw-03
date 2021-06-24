@@ -51,7 +51,12 @@ ul {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid hidden;
+  outline: 1px solid tomato;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .visually-hidden {
@@ -183,14 +188,6 @@ ul {
 /* ==============hero================== */
 
 /* ==============advantages================== */
-.advantages .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.advantages-title {
-  background-color: teal;
-}
 
 .advantages-list {
   display: flex;
@@ -224,8 +221,8 @@ ul {
 /* ==============advantages================== */
 
 /* ==============business================== */
-.business .container {
-  padding-bottom: 94px;
+.business.section {
+  padding-top: 0;
 }
 
 .business-title {
@@ -253,10 +250,6 @@ ul {
 /* ==============team================== */
 .team {
   background-color: var(--section-grey-color);
-}
-.team .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .team-title {
@@ -358,17 +351,7 @@ ul {
 }
 /* ==============footer================== */
 
-.portfolio-section .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 /* ==============filter================== */
-
-.portfolio-title {
-  color: tomato;
-}
-
 .filter-list {
   display: flex;
   justify-content: center;
